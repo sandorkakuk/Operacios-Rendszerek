@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="timeline">
+    {% assign sorted_systems = site.data.systems | sort: 'year' %}
+    
+    {% for os in sorted_systems %}
+    <div class="os-card">
+        <div class="year-badge">{{ os.year }}</div>
+        
+        <img src="{{ os.image | prepend: 'assets/images/' | relative_url }}" 
+             onerror="this.src='https://placehold.co/600x400/1e293b/FFF?text={{ os.name | url_encode }}'" 
+             alt="{{ os.name }} screenshot" 
+             class="os-image">
+             
+        <h2>{{ os.name }}</h2>
+        <p style="color: #94a3b8;">{{ os.description }}</p>
+        
+        {% if os.emulator_link %}
+        <a href="{{ os.emulator_link }}" target="_blank" class="try-btn">
+            ▶ Kipróbálom
+        </a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
