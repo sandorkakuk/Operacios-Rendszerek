@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 :root {
   /* Színpaletta */
   --bg-color: #0d1117;           /* Mélysötét háttér */
