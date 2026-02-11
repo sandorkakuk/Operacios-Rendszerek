@@ -1,29 +1,263 @@
-- name: "Unix (First Edition)"
-  year: 1971
-  description: "A modern operációs rendszerek ősatyja, amit a Bell Labs fejlesztett. Parancssoros felület, ami megváltoztatta a világot."
-  image: "unix-v1.jpg" # Tegyél egy képet az assets/images mappába
-  emulator_link: "https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/vmlinux-2.6.20&mem=192"
+# ==============================================================================
+# 1950-1969: A MAINFRAME KORSZAK & AZ ÚTTÖRŐK
+# ==============================================================================
+- name: "GM-NAA I/O"
+  year: 1956
+  description: "Az első operációs rendszernek tekintett szoftver. A General Motors kutatórészlege készítette IBM 704 gépekre."
+  image: "gm-naa.jpg"
+  emulator_link: "" 
 
-- name: "Apple II DOS 3.3"
-  year: 1980
-  description: "Az Apple II sorozat egyik legnépszerűbb lemezkezelő rendszere. Itt indult a személyi számítógépek forradalma."
+- name: "CTSS (Compatible Time-Sharing System)"
+  year: 1961
+  description: "Az MIT fejlesztése. Bebizonyította, hogy az időosztás (time-sharing) lehetséges, így többen használhattak egy gépet egyszerre."
+  image: "ctss.jpg"
+  emulator_link: "https://www.masswerk.at/rc2016/01/04.html" # CTSS szimuláció
+
+- name: "OS/360"
+  year: 1964
+  description: "Az IBM System/360 családhoz készült. Ez volt az első OS, amely a teljes termékpalettán futott a kicsitől az óriásgépekig."
+  image: "os360.jpg"
+  emulator_link: ""
+
+- name: "Multics"
+  year: 1969
+  description: "Az MIT, a GE és a Bell Labs óriásprojektje. Túl bonyolult volt, de ennek kudarca szülte a Unixot."
+  image: "multics.jpg"
+  emulator_link: "https://multics-wiki.swdb.u-paris-saclay.fr/" # Dokumentáció és emulátor infók
+
+- name: "Unix (Unics)"
+  year: 1969
+  description: "Ken Thompson (Bell Labs) megírja az első verziót PDP-7-re. Itt kezdődik a modern informatika időszámítása (Epoch)."
+  image: "unix-pdp7.jpg"
+  emulator_link: "https://bellard.org/jslinux/"
+
+# ==============================================================================
+# 1970-1979: A MIKROSZÁMÍTÓGÉPEK HAJNALA
+# ==============================================================================
+- name: "Xerox Alto OS"
+  year: 1973
+  description: "Az első grafikus felhasználói felület (GUI) egérrel. Steve Jobs ezt látva döntött úgy, hogy a Mac is ilyen lesz."
+  image: "alto.jpg"
+  emulator_link: "https://www.masswerk.at/alto/" # Contralto JS emulátor
+
+- name: "CP/M"
+  year: 1974
+  description: "Gary Kildall rendszere. Ez volt a szabvány az Intel 8080/Z80 alapú gépeken az MS-DOS előtt."
+  image: "cpm.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/sys/digitalresearch/cpm/86/1.1/"
+
+- name: "BSD (1BSD)"
+  year: 1977
+  description: "A Berkeley Software Distribution első kiadása. A Unix egyik legfontosabb ága, a modern macOS távoli őse."
+  image: "bsd.jpg"
+  emulator_link: ""
+
+- name: "Apple DOS 3.1"
+  year: 1978
+  description: "Az Apple II lemezkezelő rendszere. Wozniak zseniális hardveres megoldásaihoz írt szoftver."
   image: "appledos.jpg"
   emulator_link: "https://archive.org/details/Apple_II_DOS_3.3_1980_Apple_Computer"
 
-- name: "Windows 1.01"
+- name: "Visi On"
+  year: 1979
+  description: "Az egyik legelső PC-s grafikus felület, bár hivatalosan később jelent meg. Megelőzte a Windowst."
+  image: "vision.jpg"
+  emulator_link: ""
+
+# ==============================================================================
+# 1980-1989: A GUI ÉS A PC ROBBANÁS
+# ==============================================================================
+- name: "86-DOS (QDOS)"
+  year: 1980
+  description: "A 'Quick and Dirty Operating System'. A Microsoft ezt vette meg 50 000 dollárért, hogy MS-DOS néven eladja az IBM-nek."
+  image: "86dos.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/sys/scp/86dos/1.00/"
+
+- name: "MS-DOS 1.0"
+  year: 1981
+  description: "Az IBM PC operációs rendszere. Parancssoros, spártai, de megalapozta a Microsoft birodalmat."
+  image: "msdos1.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/sys/microsoft/dos/1.00/"
+
+- name: "SunOS 1.0"
+  year: 1982
+  description: "A Sun Microsystems UNIX alapú rendszere munkaállomásokra. A hálózati informatika úttörője."
+  image: "sunos.jpg"
+  emulator_link: ""
+
+- name: "Apple Lisa OS"
+  year: 1983
+  description: "Az első kereskedelmi GUI rendszer otthoni felhasználóknak. Üzletileg bukás, technológiailag csoda."
+  image: "lisa.jpg"
+  emulator_link: "https://lisa.sunder.net/"
+
+- name: "Macintosh System 1"
+  year: 1984
+  description: "A Macintosh debütálása. Ablakok, ikonok, menük – mindenki számára elérhető áron."
+  image: "macsys1.jpg"
+  emulator_link: "https://infinitemac.org/1984/System%201.0"
+
+- name: "Windows 1.0"
   year: 1985
-  description: "A Microsoft első grafikus felülete MS-DOS fölött. Csempézett ablakkezelés és a híres Reversi játék."
+  description: "A Microsoft válasza a Mac-re. Még nem önálló OS, csak egy grafikus héj a DOS felett."
   image: "win101.jpg"
   emulator_link: "https://www.pcjs.org/software/pcx86/micro/microsoft/windows/1.01/"
 
+- name: "AmigaOS 1.0"
+  year: 1985
+  description: "Preemptív multitasking és színes grafika 1985-ben. Évekkel megelőzte a korát."
+  image: "amiga.jpg"
+  emulator_link: "https://scriptedamigaemulator.net/"
+
+- name: "GEOS"
+  year: 1986
+  description: "Grafikus rendszer a Commodore 64-re. Bebizonyította, hogy 1 MHz-en is lehet ablakokat kezelni."
+  image: "geos.jpg"
+  emulator_link: "https://archive.org/details/Geos_v1.3_1986_Berkeley_Softworks"
+
+- name: "Minix"
+  year: 1987
+  description: "Andrew Tanenbaum oktatási rendszere. Ennek tanulmányozása ihlette Linus Torvaldsot."
+  image: "minix.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/sys/minix/1.1/"
+
+- name: "OS/2 1.0"
+  year: 1987
+  description: "Az IBM és a Microsoft közös gyermeke, amit a DOS utódjának szántak, de végül elváltak útjaik."
+  image: "os2.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/sys/ibm/os2/1.00/"
+
+- name: "NeXTSTEP"
+  year: 1989
+  description: "Steve Jobs 'száműzetésben' alkotott rendszere. Ezen találták fel a World Wide Webet."
+  image: "nextstep.jpg"
+  emulator_link: "https://archive.org/details/nextstep-33-intel"
+
+# ==============================================================================
+# 1990-1999: A MODERN KOR & AZ INTERNET
+# ==============================================================================
+- name: "Windows 3.0"
+  year: 1990
+  description: "Az első igazán sikeres Windows. Itt jelent meg a Solitaire, hogy megtanítsa az embereket egeret használni."
+  image: "win30.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/micro/microsoft/windows/3.00/"
+
+- name: "Linux (Kernel 0.01)"
+  year: 1991
+  description: "Linus Torvalds közzéteszi a Linux kernelt. 'Csak hobbi, nem lesz nagy és profi, mint a GNU'."
+  image: "linux-early.jpg"
+  emulator_link: "https://bellard.org/jslinux/"
+
+- name: "Debian GNU/Linux"
+  year: 1993
+  description: "Ian Murdock által alapított disztribúció. A stabilitás és a szabad szoftverek bástyája."
+  image: "debian.jpg"
+  emulator_link: "https://copy.sh/v86/?profile=linux26"
+
 - name: "Windows 95"
   year: 1995
-  description: "A Start menü születése. 32-bites architektúra és a modern asztali élmény alapköve."
+  description: "Start menü, Tálca, Plug and Play. A PC-k ekkor váltak háztartási eszközzé."
   image: "win95.jpg"
   emulator_link: "https://copy.sh/v86/?profile=windows95"
 
-- name: "Hannah Montana Linux"
+- name: "Palm OS"
+  year: 1996
+  description: "A PDA-k (kézi számítógépek) operációs rendszere. A mai okostelefonok előfutára."
+  image: "palmos.jpg"
+  emulator_link: "https://cloudpilot-emu.github.io/"
+
+- name: "Windows 98"
+  year: 1998
+  description: "A Windows 95 finomhangolása, jobb USB támogatással és integrált webböngészővel."
+  image: "win98.jpg"
+  emulator_link: "https://copy.sh/v86/?profile=windows98"
+
+- name: "Mac OS 9"
+  year: 1999
+  description: "A klasszikus Mac OS hattyúdala. Az utolsó verzió a nagy Unix-átállás előtt."
+  image: "macos9.jpg"
+  emulator_link: "https://infinitemac.org/1999/Mac%20OS%209.0.4"
+
+# ==============================================================================
+# 2000-2009: MOBIL FORRADALOM & STABILITÁS
+# ==============================================================================
+- name: "Windows 2000"
+  year: 2000
+  description: "Professzionális NT alapok. Stabil és gyors, a rendszergazdák kedvence volt."
+  image: "win2000.jpg"
+  emulator_link: "https://copy.sh/v86/?profile=windows2000"
+
+- name: "Mac OS X 10.0 (Cheetah)"
+  year: 2001
+  description: "Az Apple új korszaka. Unix alapok (BSD) és a gyönyörű Aqua felület találkozása."
+  image: "macosx.jpg"
+  emulator_link: "https://infinitemac.org/2001/Mac%20OS%20X%2010.0"
+
+- name: "Windows XP"
+  year: 2001
+  description: "Egyesítette az otthoni és üzleti Windowst. A legendás 'Bliss' (zöld domb) háttérkép otthona."
+  image: "winxp.jpg"
+  emulator_link: "https://winxp.vercel.app/" # Webes UI demó
+
+- name: "Ubuntu 4.10"
+  year: 2004
+  description: "A Linux emberközelivé tétele. Könnyű telepítés és használat mindenkinek."
+  image: "ubuntu.jpg"
+  emulator_link: "https://copy.sh/v86/?profile=linux26"
+
+- name: "iOS 1.0 (iPhone OS)"
+  year: 2007
+  description: "A rendszer, ami megölte a gombokat. Multi-touch felület, ami megváltoztatta a világot."
+  image: "ios1.jpg"
+  emulator_link: "" # Nincs nyilvános webes emulátor, jogvédett
+
+- name: "Android 1.0"
+  year: 2008
+  description: "A Google nyílt forráskódú válasza. Linux kernelre épül, és ma a legelterjedtebb OS a világon."
+  image: "android1.jpg"
+  emulator_link: ""
+
+- name: "Windows 7"
   year: 2009
-  description: "Egy humoros, de működő Kubuntu alapú disztribúció. Mert a Linux világában mindent lehet."
-  image: "hannah.jpg"
-  emulator_link: "https://distrotest.net" # Általános link, ritka rendszerekhez
+  description: "A Vista hibáinak javítása. Aero Glass felület, tálca előnézetek és kiváló stabilitás."
+  image: "win7.jpg"
+  emulator_link: "https://win7.vercel.app/" # Webes UI demó
+
+# ==============================================================================
+# 2010-NAPJAINKIG: FELHŐ & KONVERGENCIA
+# ==============================================================================
+- name: "ChromeOS"
+  year: 2011
+  description: "A Google felhő-alapú rendszere. Lényegében egy böngésző, ami operációs rendszerként viselkedik."
+  image: "chromeos.jpg"
+  emulator_link: ""
+
+- name: "Windows 8"
+  year: 2012
+  description: "Radikális (és vitatott) átalakítás csempés felülettel, érintőképernyőkre optimalizálva."
+  image: "win8.jpg"
+  emulator_link: ""
+
+- name: "Windows 10"
+  year: 2015
+  description: "A Microsoft szolgáltatásként (SaaS) kezeli. Visszahozta a Start menüt és bevezette a Cortanát."
+  image: "win10.jpg"
+  emulator_link: "https://win11.vercel.app/" # Win11 UI, hasonló élmény
+
+- name: "Fuchsia"
+  year: 2016
+  description: "A Google kísérleti, nem Linux-alapú (Zircon kernel) rendszere, ami okosotthon eszközökön fut."
+  image: "fuchsia.jpg"
+  emulator_link: ""
+
+- name: "HarmonyOS"
+  year: 2019
+  description: "A Huawei saját fejlesztésű, mikrokernel alapú elosztott operációs rendszere."
+  image: "harmonyos.jpg"
+  emulator_link: ""
+
+- name: "Windows 11"
+  year: 2021
+  description: "Lekerekített sarkok, középre igazított tálca és Android appok futtatásának lehetősége."
+  image: "win11.jpg"
+  emulator_link: "https://win11.vercel.app/" # Webes UI demó
