@@ -1,0 +1,29 @@
+- name: "Unix (First Edition)"
+  year: 1971
+  description: "A modern operációs rendszerek ősatyja, amit a Bell Labs fejlesztett. Parancssoros felület, ami megváltoztatta a világot."
+  image: "unix-v1.jpg" # Tegyél egy képet az assets/images mappába
+  emulator_link: "https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/vmlinux-2.6.20&mem=192"
+
+- name: "Apple II DOS 3.3"
+  year: 1980
+  description: "Az Apple II sorozat egyik legnépszerűbb lemezkezelő rendszere. Itt indult a személyi számítógépek forradalma."
+  image: "appledos.jpg"
+  emulator_link: "https://archive.org/details/Apple_II_DOS_3.3_1980_Apple_Computer"
+
+- name: "Windows 1.01"
+  year: 1985
+  description: "A Microsoft első grafikus felülete MS-DOS fölött. Csempézett ablakkezelés és a híres Reversi játék."
+  image: "win101.jpg"
+  emulator_link: "https://www.pcjs.org/software/pcx86/micro/microsoft/windows/1.01/"
+
+- name: "Windows 95"
+  year: 1995
+  description: "A Start menü születése. 32-bites architektúra és a modern asztali élmény alapköve."
+  image: "win95.jpg"
+  emulator_link: "https://copy.sh/v86/?profile=windows95"
+
+- name: "Hannah Montana Linux"
+  year: 2009
+  description: "Egy humoros, de működő Kubuntu alapú disztribúció. Mert a Linux világában mindent lehet."
+  image: "hannah.jpg"
+  emulator_link: "https://distrotest.net" # Általános link, ritka rendszerekhez
